@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Nine Billion Names of God</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PAGE 1: LANDING -->
+  <div id="page-landing" class="page">
+    <div class="orb"></div>
+    <div class="landing-content">
+      <p class="landing-question">Would you like to fulfil your eternal purpose?</p>
+      <button id="btn-start" class="start-button">What is God's Name?</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2: THE RACE -->
+  <div id="page-race" class="page" style="display:none">
+    <div class="race-container">
+
+      <div class="side monk-side">
+        <h2 class="side-title monk-title">The Monk</h2>
+        <canvas id="monk-canvas" width="80" height="80"></canvas>
+        <div class="permutation-display" id="monk-permutation">AABBAACCA</div>
+        <div class="progress-container">
+          <div class="progress-bar monk-bar" id="monk-bar"></div>
+        </div>
+        <div class="stats monk-stats">
+          <div>Progress: <span id="monk-progress">0.000000%</span></div>
+          <div>Estimated completion: ~15,000 years</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="side computer-side">
+        <h2 class="side-title computer-title">The Computer</h2>
+        <canvas id="computer-canvas" width="80" height="80"></canvas>
+        <div class="permutation-display" id="computer-permutation">AAAAAAAAA</div>
+        <div class="progress-container">
+          <div class="progress-bar computer-bar" id="computer-bar"></div>
+        </div>
+        <div class="stats computer-stats">
+          <div>Progress: <span id="computer-progress">0.00%</span></div>
+          <div>~1,000,000,000 / sec</div>
+          <div>Estimated completion: <span id="computer-countdown">15</span> seconds</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PAGE 3: BOOM -->
+  <div id="page-boom" class="page" style="display:none">
+    <div id="boom-text" class="boom-text">BOOM</div>
+    <div class="boom-aftermath" id="boom-aftermath" style="display:none">
+      <p class="jk-text">jk — it only counts if you write all the possible names of God yourself</p>
+      <div class="monk-progress-wrap">
+        <div class="progress-container">
+          <div class="progress-bar monk-bar" id="monk-bar-boom"></div>
+        </div>
+        <div class="stats monk-stats">
+          <div>Progress: <span id="monk-progress-boom">0.000000%</span></div>
+          <div>The monk continues... ~15,000 years remaining</div>
+        </div>
+      </div>
+      <p class="bottom-note">This couldve been completed in ~5 seconds — but I slowed it down a bit and gave us all a few more seconds of life</p>
+    </div>
+  </div>
+
+  <script src="monk.js"></script>
+  <script src="computer.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
